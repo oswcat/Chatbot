@@ -1,0 +1,263 @@
+{
+  "intents": [
+    {
+      "name": "Bienvenida",
+      "patterns": [
+        ".",
+        "Hola",
+        "me gustaría tener información",
+        "Buenos días",
+        "Buenas tardes",
+        "Buenas noches",
+        "Buenas"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Cursos",
+      "patterns": [
+        "¿Tienen cursos?",
+        "¿Manejan algún tipo de curso?",
+        "¿Qué opciones de curso tienen?",
+        "¿Cursos?"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Inglés",
+      "patterns": ["Inglés", "Evolve"],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Preguntas frecuentes - Colegiatura",
+      "patterns": [
+        "¿Como puedo pagar mi colegiatura?",
+        "No puedo pagar mi colegiatura.",
+        "Donde puedo pagar mi colegiatura",
+        "¿Puedo pagar con tarjeta?",
+        "¿Se puede pagar en ventanilla?",
+        "Métodos de pago",
+        "Opciones de pago",
+        "¿Puedo pagar en línea?"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Preguntas frecuentes - Inscripciones",
+      "patterns": [
+        "¿Como me puedo reinscribir?",
+        "¿Formas de reinscripción?",
+        "¿Me puedo reinscribir en línea?"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Oferta educativa - General",
+      "patterns": [
+        "Info",
+        "Informes",
+        "¿Tienen licenciaturas?",
+        "Oferta académica",
+        "¿Qué carreras tienen?",
+        "Información",
+        "Bachillerato",
+        "¿Qué modalidades tienen?",
+        "Preparatoria",
+        "Prepa UNAM"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Asesor Educativo",
+      "patterns": [
+        "Si quiero continuar con el proceso",
+        "Me gustaría hablar con un asesor"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Costos",
+      "patterns": [
+        "Costos",
+        "Precio",
+        "¿Cuánto cuesta?",
+        "No me dijeron cuánto cuesta.",
+        "Dame el precio."
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Ubicación de la institución",
+      "patterns": [
+        "¿Dónde se encuentran?",
+        "Cuál es su ubicación.",
+        "Dirección.",
+        "¿Como puedo llegar?",
+        "¿Dónde están ubicados?"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Redes Sociales",
+      "patterns": [
+        "¿Dónde los puede seguir?",
+        "¿Tienen alguna red social?",
+        "TikTok",
+        "Instagram",
+        "Facebook"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Reclutamiento",
+      "patterns": [
+        "¡Quiero trabajar con ustedes!",
+        "¿Dónde puedo dar mi CV?",
+        "¿Dónde puedo mandar mi CV?"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Despedida",
+      "patterns": [
+        "¡Gracias!",
+        "No sirves",
+        "Gracias por la ayuda",
+        "¡Excelente servicio!"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Servicios escolares",
+      "patterns": [
+        "¿Cuánto cuesta un certificado?",
+        "¿Como inicio mi proceso de titulación?",
+        "¿Me pueden dar mi horario?",
+        "¿Cuáles son las formas de titulación?",
+        "¿Como me puedo titular?"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Cajas",
+      "patterns": [
+        "¿Cuál es el precio de los lugares de estacionamiento?",
+        "Estacionamiento",
+        "Cuánto cuestan los lockers?",
+        "Lockers"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
+      "name": "Uniformes y libros",
+      "patterns": [
+        "Uniformes",
+        "Libros",
+        "Bachillerato",
+        "Prepa UNAM"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+      {
+  "intents": [
+    {
+      "name": "Administracion_de_empresas",
+      "patterns": ["Administración de empresas"],
+      "responses": ["[la respuesta sobre Administración de Empresas va aquí]"]
+    },
+    {
+      "name": "Administracion_de_empresas_turisticas",
+      "patterns": ["Administración de empresas turísticas", "Turismo"],
+      "responses": ["[la respuesta sobre Administración de Empresas Turísticas va aquí]"]
+    },
+    {
+      "name": "Arquitectura",
+      "patterns": ["Arquitectura", "Arqui"],
+      "responses": ["[la respuesta sobre Arquitectura va aquí]"]
+    },
+    {
+      "name": "Ciencias_de_la_comunicacion",
+      "patterns": ["Ciencias de la comunicación", "Comunicación"],
+      "responses": ["[la respuesta sobre Ciencias de la Comunicación va aquí]"]
+    },
+    {
+      "name": "Comercio_internacional",
+      "patterns": ["Comercio internacional", "Relaciones internacionales"],
+      "responses": ["[la respuesta sobre Comercio Internacional va aquí]"]
+    },
+    {
+      "name": "Negocios_internacionales",
+      "patterns": ["Negocios internacionales"],
+      "responses": ["[la respuesta sobre Negocios Internacionales va aquí]"]
+    },
+    {
+      "name": "Contaduria",
+      "patterns": ["Contaduría", "Conta"],
+      "responses": ["[la respuesta sobre Contaduría va aquí]"]
+    },
+    {
+      "name": "Finanzas",
+      "patterns": ["Finanzas"],
+      "responses": ["[la respuesta sobre Finanzas va aquí]"]
+    },
+    {
+      "name": "Derecho",
+      "patterns": ["Derecho"],
+      "responses": ["[la respuesta sobre Derecho va aquí]"]
+    },
+    {
+      "name": "Diseno_grafico",
+      "patterns": ["Diseño gráfico", "Diseño"],
+      "responses": ["[la respuesta sobre Diseño Gráfico va aquí]"]
+    },
+    {
+      "name": "Fisioterapia",
+      "patterns": ["Fisioterapia", "Fisio"],
+      "responses": ["[la respuesta sobre Fisioterapia va aquí]"]
+    },
+    {
+      "name": "Gastronomia",
+      "patterns": ["Gastronomía", "Gastro"],
+      "responses": ["[la respuesta sobre Gastronomía va aquí]"]
+    },
+    {
+      "name": "Ingenieria_en_sistemas_computacionales",
+      "patterns": [
+        "Ing. en sistemas computacionales",
+        "Sistemas computacionales",
+        "Ingeniería",
+        "Sistemas"
+      ],
+      "responses": ["[la respuesta sobre Ingeniería en Sistemas Computacionales va aquí]"]
+    },
+    {
+      "name": "Mercadotecnia",
+      "patterns": [
+        "Mercadotecnia",
+        "Merca",
+        "Marketing",
+        "Publicidad y medios",
+        "Mercadotecnia digital y publicidad"
+      ],
+      "responses": ["[la respuesta sobre Mercadotecnia va aquí]"]
+    },
+    {
+      "name": "Nutricion",
+      "patterns": ["Nutrición", "Nutri"],
+      "responses": ["[la respuesta sobre Nutrición va aquí]"]
+    },
+    {
+      "name": "Psicologia",
+      "patterns": ["Psicología", "Psico"],
+      "responses": ["[la respuesta sobre Psicología va aquí]"]
+    },
+    {
+      "name": "Pedagogia",
+      "patterns": ["Pedagogía", "Enseñanza en niños pequeños"],
+      "responses": ["[la respuesta sobre Pedagogía va aquí]"]
+    }
+  ]
+}
+
+  ]
+}
