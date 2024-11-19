@@ -33,6 +33,7 @@ Son las palabras o frases que el bot usará para identificar esta intención. Ej
 "Administración de empresas"
 "Administración"
 "Empresas"
+
 3.*responses* (Respuestas):
 Contiene las respuestas que el bot dará cuando esta intención sea detectada. En este caso, hemos usado un marcador **([la respuesta sobre Administración de Empresas va aquí])** para personalizarlo después
 
