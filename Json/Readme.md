@@ -21,6 +21,8 @@ En el modelo de entrenamiento supervisado se emplea un archivo JSON que contiene
   "patterns": ["Administración de empresas", "Administración", "Empresas"],
   "responses": ["[la respuesta sobre Administración de Empresas va aquí]"]
 }
+```
+##### ¿Comó funcional las intenciones?
 1.*name* (Nombre):
 El identificador único de esta intención. En este caso, es "Administracion_de_empresas".
 Esto ayuda a organizar y manejar las intenciones de manera clara.
