@@ -32,7 +32,7 @@ A si mismo los **diagramas de flujo** donde se muestran dos de los problemas que
 6. Instalar ngrok.
 7. Instalar supervisord o systemd.
 8. Configurar el firewall (ufw para flask).
-[1^]: Es muy importante instalar de manera correcta el entorno de ejecución del BOT.
+> Es muy importante instalar de manera correcta el entorno de ejecución del BOT.
 ##### Librerias necesarias.
 1. Spacy.
 2. Json.
