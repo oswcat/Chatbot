@@ -330,7 +330,28 @@
         "name": "Maestria_ciberseguridad",
         "patterns": ["Seguridad de sistemas y tecnologías de la información", "Ciberseguridad", "Maestría en Ciberseguridad"],
         "responses": ["[la respuesta sobre la Maestría en Ciberseguridad va aquí]"]
+      },
+      {
+        "name": "Neuromarketing",
+        "patterns": ["Seguridad de sistemas y tecnologías de la información", "Ciberseguridad", "Maestría en Ciberseguridad"],
+        "responses": ["[la respuesta sobre la Maestría en Ciberseguridad va aquí]"]
+      },
+      {
+        "name": "Sabor_y_salud",
+        "patterns": ["Sabor y salud"],
+        "responses": ["[la respuesta sobre el Diplomado de sabor y salud va aquí]"]
+      },
+      {
+        "name": "Habilidades_gerenciales",
+        "patterns": ["Habilidadades Gerenciales","Gerente"],
+        "responses": ["[la respuesta sobre el Diplomado de Habilidades Gerenciales va aquí]"]
+      },
+      {
+        "name": "Diplomados",
+        "patterns": ["Diplomado","Diplomados"],
+        "responses": ["[la respuesta sobre los Diplomados va aquí]"]
       }
+
     ]
 }
 

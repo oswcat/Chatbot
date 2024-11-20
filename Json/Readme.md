@@ -9,7 +9,9 @@ Una intención es una categoría que representa el propósito detrás de un mens
 Cada intención tiene:
 
 1.**Un nombre**: Identifica de manera única la intención.
+
 2.**Patrones**: Son ejemplos de lo que el usuario podría    escribir para activar esa intención.
+
 3.**Respuestas**: Son las respuestas que el bot puede dar cuando identifica esta intención.
 ##### Intenciones y patrones.
 En el modelo de entrenamiento supervisado se emplea un archivo JSON que contienen las preguntas y respuestas que se van a utilizar para entrenar el model. Por lo tanto se tienen que identificar las intenciones con las que el usuario se vaya a comunicar con el bot. Por ejemplo, si el usuario pregunta *"info"*, el bot tiene que buscar en su directorio la pregunta info o alguna similar. En nuestro archivo JSON tenemos info en *"oferta educativa"* entonces el bot le va a responder con un mensaje dandole todas las opciones de la oferta educativa.
@@ -45,7 +47,7 @@ Contiene las respuestas que el bot dará cuando esta intención sea detectada. E
 
 *Oferta educativa (General). 
 
-*Bachillerato. 
+*Bachillerato general. 
 
 *Prepa UNAM. 
 
@@ -145,6 +147,6 @@ Contiene las respuestas que el bot dará cuando esta intención sea detectada. E
 
 *Neuromarketing
 
-*sabor y salud
+*Sabor y salud
 
 *Habilidades gerenciales.
