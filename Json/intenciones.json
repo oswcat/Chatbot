@@ -1,6 +1,37 @@
 {
   "intents": [
     {
+      "menu": {
+          "mensaje": "No entendí tu pregunta. Por favor, selecciona una de las siguientes opciones:",
+          "opciones": {
+              "1": "Información sobre Prepa UNAM.",
+              "2": "Información sobre Bachillerato general.",
+              "3": "Información sobre licenciaturas presenciales.",
+              "4": "Información sobre maestrías.",
+              "5": "Información sobre curso de inglés EVOLVE.",
+              "6": "Información sobre licenciaturas en línea.",
+              "7": "Información sobre licenciaturas sabatinas.",
+              "8": "Información sobre Diplomados.",
+              "9": "Contactar a un asesor educativo.",
+              "10": "Ubicación y horario de servicio.",
+              "11": "Preguntas frecuentes."
+          },
+          "respuestas": {
+              "1": " ",
+              "2": " ",
+              "3": " ",
+              "4": " ",
+              "5": " ",
+              "6": " ",
+              "7": " ",
+              "8": " ",
+              "9": " ",
+              "10": " ",
+              "11": " "
+          }
+      }
+    },
+    {
       "name": "Bienvenida",
       "patterns": [
         ".",
@@ -60,7 +91,7 @@
         "Oferta académica",
         "¿Qué carreras tienen?",
         "Información",
-        "Bachillerato",
+        "Bachillerato general",
         "¿Qué modalidades tienen?",
         "Preparatoria",
         "Prepa UNAM"
@@ -152,9 +183,8 @@
       "name": "Uniformes y libros",
       "patterns": [
         "Uniformes",
-        "Libros",
-        "Bachillerato",
-        "Prepa UNAM"
+        "Libros"
+
       ],
       "responses": ["[la respuesta va aquí]"]
     },
@@ -333,7 +363,7 @@
       },
       {
         "name": "Neuromarketing",
-        "patterns": ["Seguridad de sistemas y tecnologías de la información", "Ciberseguridad", "Maestría en Ciberseguridad"],
+        "patterns": ["Neuromarketing"],
         "responses": ["[la respuesta sobre la Maestría en Ciberseguridad va aquí]"]
       },
       {
