@@ -12,7 +12,7 @@ A si mismo los **diagramas de flujo** donde se muestran dos de los problemas que
 >Diagrama de flujo de como tiene que funcionar el BOT.
 ##### ¿Comó funciona el BOT?:
 1. El usuario ingresa al chat y el BOT le da la bienvenida.
-2. El usuario haces una pregunta o solicita información.
+2. El usuario hace una pregunta o solicita información.
 3. El BOT le da la información solicitada o le hace una pregunta para obtener más información.
 4. El usuario responde a la pregunta del BOT.
 5. En el caso que la pregunta no este guardada en las intenciones, el bot muestra el menu de opciones.
@@ -25,12 +25,56 @@ A si mismo los **diagramas de flujo** donde se muestran dos de los problemas que
 ## Configuración del entorno donde se ejecutará el BOT.
 ##### Configuración de la maquina.
 1. Instalar Debian en el servidor.
+>Una vez instalado, se tienen que actualizar todos los paquetes.
+```bash
+sudo apt update && sudo apt upgrade -y
+```
 2. Configuración de la ip.
+>Se tiene que configurar la ip del servidor.
+```bash
+sudo nano /etc/network/interfaces
+ ```
+ >Se tiene que modificar la direccion, mascara y gateway dependiendo a la ip que se tenga.
+```bash
+auto eth0
+iface eth0 inet static
+    address 192.168.1.100
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+    dns-nameservers 8.8.8.8 8.8.4.4
+```
+```bash
+sudo systemctl restart networking
+```
 3. Instalar Python.
+```bash
+sudo apt update
+sudo apt install -y python3 python3-venv python3-dev
+```
 4. Instalar el framework de Flask.
+```bash
+pip install flask
+```
 5. Instalar pip.
+```bash
+sudo apt update
+sudo apt install -y python3-pip
+```
 6. Instalar ngrok.
+```bash
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+sudo mv ngrok /usr/local/bin
+```
+>Autentica ngrok (cambia <YOUR_AUTH_TOKEN> por tu token de autenticación):
+```bash
+ngrok authtoken <YOUR_AUTH_TOKEN>
+```
 7. Instalar supervisord o systemd.
+```bash
+sudo apt update
+sudo apt install -y supervisor
+```
 8. Configurar el firewall (ufw para flask).
 > Es muy importante instalar de manera correcta el entorno de ejecución del BOT.
 ##### Librerias necesarias.

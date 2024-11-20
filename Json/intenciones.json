@@ -255,8 +255,83 @@
       "name": "Pedagogia",
       "patterns": ["Pedagogía", "Enseñanza en niños pequeños"],
       "responses": ["[la respuesta sobre Pedagogía va aquí]"]
-    }
-  ]
+    },
+      {
+        "name": "Licenciaturas_empresariales",
+        "patterns": ["Licenciaturas empresariales"],
+        "responses": ["[la respuesta sobre Licenciaturas empresariales va aquí]"]
+      },
+      {
+        "name": "Licenciaturas_sabatinas",
+        "patterns": ["Licenciaturas sabatinas"],
+        "responses": ["[la respuesta sobre Licenciaturas sabatinas va aquí]"]
+      },
+      {
+        "name": "Derecho_en_linea",
+        "patterns": ["Derecho en línea", "Derecho virtual", "Derecho online"],
+        "responses": ["[la respuesta sobre Derecho en línea va aquí]"]
+      },
+      {
+        "name": "Administracion_de_empresas_en_linea",
+        "patterns": ["Administración en línea", "Administración virtual", "Administración online"],
+        "responses": ["[la respuesta sobre Administración de empresas en línea va aquí]"]
+      },
+      {
+        "name": "Licenciaturas_en_linea",
+        "patterns": ["Licenciaturas en línea", "Carreras en línea", "Licenciaturas virtuales"],
+        "responses": ["[la respuesta sobre Licenciaturas en línea va aquí]"]
+      },
+      {
+        "name": "Contaduria_en_linea",
+        "patterns": ["Contaduría en línea", "Contaduría virtual", "Conta en línea"],
+        "responses": ["[la respuesta sobre Contaduría en línea va aquí]"]
+      },
+      {
+        "name": "Pedagogia_en_linea",
+        "patterns": ["Pedagogía en línea", "Pedagogía virtual"],
+        "responses": ["[la respuesta sobre Pedagogía en línea va aquí]"]
+      },
+      {
+        "name": "Posgrados",
+        "patterns": ["Posgrados", "Programas de posgrado", "Estudios de posgrado"],
+        "responses": ["[la respuesta sobre Posgrados va aquí]"]
+      },
+      {
+        "name": "Maestrias",
+        "patterns": ["Maestrías", "Programas de maestría"],
+        "responses": ["[la respuesta sobre Maestrías va aquí]"]
+      },
+      {
+        "name": "Maestria_talento_humano",
+        "patterns": ["Administración y gestión estratégica de talento humano", "Talento humano", "Recursos humanos"],
+        "responses": ["[la respuesta sobre la Maestría en Talento Humano va aquí]"]
+      },
+      {
+        "name": "Maestria_derecho_fiscal",
+        "patterns": ["Derecho fiscal y administrativo", "Fiscal", "Impuestos", "Contabilidad fiscal"],
+        "responses": ["[la respuesta sobre la Maestría en Derecho Fiscal va aquí]"]
+      },
+      {
+        "name": "Maestria_contabilidad",
+        "patterns": ["Maestría en contabilidad", "Contabilidad", "Impuestos"],
+        "responses": ["[la respuesta sobre la Maestría en Contabilidad va aquí]"]
+      },
+      {
+        "name": "Maestria_derecho_procesal",
+        "patterns": ["Derecho procesal penal acusatorio y adversarial", "Procesal", "Penal", "Jurídico", "Derecho penal"],
+        "responses": ["[la respuesta sobre la Maestría en Derecho Procesal va aquí]"]
+      },
+      {
+        "name": "Maestria_educacion",
+        "patterns": ["Educación", "Maestría en Educación"],
+        "responses": ["[la respuesta sobre la Maestría en Educación va aquí]"]
+      },
+      {
+        "name": "Maestria_ciberseguridad",
+        "patterns": ["Seguridad de sistemas y tecnologías de la información", "Ciberseguridad", "Maestría en Ciberseguridad"],
+        "responses": ["[la respuesta sobre la Maestría en Ciberseguridad va aquí]"]
+      }
+    ]
 }
 
   ]
