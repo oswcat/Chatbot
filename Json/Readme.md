@@ -36,4 +36,62 @@ Son las palabras o frases que el bot usará para identificar esta intención. Ej
 
 3.*responses* (Respuestas):
 Contiene las respuestas que el bot dará cuando esta intención sea detectada. En este caso, hemos usado un marcador **([la respuesta sobre Administración de Empresas va aquí])** para personalizarlo después
+###### Intenciones que se han identificado.
+*Bienvenida. 
+*Cursos. 
+*Preguntas frecuentes. 
+*Oferta educativa (General). 
+*Bachillerato. 
+*Prepa UNAM. 
+*Asesor. 
+*Asesores ocupados. 
+*Ubicación de la institución. 
+*Despedida *Opcional. 
+*Pregunta de seguimiento. 
+*Información de contacto. 
+*Extensiones. 
+*Redes sociales. 
+*Costos *opcional. 
+*Datos de contacto. 
+*Vacantes laborales. 
+*Extensiones.
+*Redes Sociales.
+*Diferencias entre bachillerato y prepa UNAM.
+*Servicios Escolares.
+*Cajas.
+
+**Intenciones de Licenciaturas**
+*Administración de Empresas.
+*Administración de Empresas Turísticas.
+*Arquitectura.
+*Ciencias de la Comunicación.
+*Comercio Internacional.
+*Contaduría.
+*Derecho.
+*Diseño Gráfico.
+*Fisioterapia.
+*Gastronomía.
+*Ingeniería en Sistemas Computacionales.
+*Mercadotecnia.
+*Nutrición.
+*Psicología.
+*Pedagogía.
+
+**Licenciaturas Empresariales**
+**Licenciaturas Sabatinas**
+*Derecho. 
+*Administración de empresas. 
+
+**Licenciaturas en Línea**
+*Contaduría. 
+*Pedagogía. 
+> Nota: Se tienen conflictos con estas carreras porque existen igual en modelo presencial, por lo tanto, el Bot tiene que preguntar que modalidad y de ahí dar la respuesta.
+
+ **Intenciones de Maestrías**
+ *Administración y gestión estratégica de talento humano. 
+ *Derecho fiscal y administrativo. 
+ *Derecho corporativo y protección empresarial. 
+ *Derecho procesal penal acusatorio y adversarial. 
+ *Educación. 
+ *Seguridad de sistemas y tecnologías de la información. 
 
