@@ -1,7 +1,12 @@
 ### Diagramas de flujo.
 En este espacio se encontrarán los diagramas de flujo de los diferentes procesos que tiene que realizar el BOT y cómo se relacionan entre sí.
+Es importante conocer la colorimetría de los diagramas de flujo para entenderles mejor.
+
+![Casos](../img/colorimetria.png)
+
 #### Diagrama de flujo en casos prácticos. 
 En el diagrama se presentan distintos casos que el BOT tiene que enfrentar en una interacción "normal" con el usuario.
+
 #### Caso 1: El usuario hace una pregunta que no se encuentra en nuestras opciones.
 
 ![Casos](../img/Caso%201%20.png)
