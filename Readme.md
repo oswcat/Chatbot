@@ -4,44 +4,44 @@ La intención de este repositorio es la creación de un BOT de Messenger que pue
 
 ## 19/11/24
 
-Se empezaron a subir todos los archivos creados con anterioridad , incluyendo el **Reporte de practicas** que se esta modificando diariamente con todos los avances del dia.
-A si mismo los **diagramas de flujo** donde se muestran dos de los problemas que se encontraron en el planteamiento del proyecto. Fueron el *"Bucle por directorio no encontrado"* y *"contactar a un asesor"*, en estos dos casos se encontraron soluciones y se han implementado en el proyecto. Con soluciones "sencillas" pero efectivas. Por ejemplo, en el caso del "Bucle por directorio no encontrado" se utilizo un menu en el que el usuario puede seleccionar la opción que satisfaga sus necesecidades . En el caso del "contactar a un asesor" se utilizo una intervención de un asesor que se encuentra moderando el chat. Por lo tanto, se puede decir que se han encontrado soluciones efectivas a los problemas encontrados.
+Se empezaron a subir todos los archivos creados con anterioridad, incluyendo el **Reporte de prácticas,** que se está modificando diariamente con todos los avances del día.
+A sí mismos los **diagramas de flujo** donde se muestran dos de los problemas que se encontraron en el planteamiento del proyecto. Fueron el *"Bucle por directorio no encontrado"* y *"contactar a un asesor"*, en estos dos casos se encontraron soluciones y se han implementado en el proyecto. Con soluciones "sencillas" pero efectivas. Por ejemplo, en el caso del "Bucle por directorio no encontrado" se utilizó un menú en el que el usuario puede seleccionar la opción que satisfaga sus necesidades. En el caso del "contactar a un asesor" se utilizó una intervención de un asesor que se encuentra moderando el chat. Por lo tanto, se puede decir que se han encontrado soluciones efectivas a los problemas encontrados.
 
-##### Tambien se puede encontrar el flujo de trabajo del BOT.
-![estructura](./img/Estructura.png)
+##### También se puede encontrar el flujo de trabajo del BOT.
+![Estructura](./img/Estructura.png)
 >Diagrama de flujo de como tiene que funcionar el BOT.
-##### ¿Comó funciona el BOT?:
+##### ¿Cómo funciona el BOT?:
 1. El usuario ingresa al chat y el BOT le da la bienvenida.
 2. El usuario hace una pregunta o solicita información.
 3. El BOT le da la información solicitada o le hace una pregunta para obtener más información.
 4. El usuario responde a la pregunta del BOT.
-5. En el caso que la pregunta no este guardada en las intenciones, el bot muestra el menu de opciones.
-6. El usuario selecciona una opción del menu.
+5. En el caso de que la pregunta no esté guardada en las intenciones, el bot muestra el menú de opciones.
+6. El usuario selecciona una opción del menú.
 7. Si la opción seleccionada sigue sin estar en el conocimiento del BOT, el asesor se encarga de ayudar al usuario.
-8. Si el usuario deja de responder, el BOT manda un mensaje de seguimiento despues de X tiempo.
+8. Si el usuario deja de responder, el BOT manda un mensaje de seguimiento después de X tiempo.
 [^1]: El tiempo X puede ser configurado por el administrador del BOT. 
 [^2]: Ya se encuentran implementadas las soluciones de los casos de uso.
 
 ## Configuración del entorno donde se ejecutará el BOT.
-##### Configuración de la maquina.
+##### Configuración de la máquina.
 1. Instalar Debian en el servidor.
 >Una vez instalado, se tienen que actualizar todos los paquetes.
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
-2. Configuración de la ip.
+2. Configuración de la IP.
 >Se tiene que configurar la ip del servidor.
 ```bash
 sudo nano /etc/network/interfaces
- ```
- >Se tiene que modificar la direccion, mascara y gateway dependiendo a la ip que se tenga.
+ ```
+ >Se tiene que modificar la dirección, máscara y gateway dependiendo de la IP que se tenga.
 ```bash
 auto eth0
 iface eth0 inet static
-    address 192.168.1.100
-    netmask 255.255.255.0
-    gateway 192.168.1.1
-    dns-nameservers 8.8.8.8 8.8.4.4
+    address 192.168.1.100
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+    dns-nameservers 8.8.8.8 8.8.4.4
 ```
 ```bash
 sudo systemctl restart networking
@@ -77,9 +77,9 @@ sudo apt install -y supervisor
 ```
 8. Configurar el firewall (ufw para flask).
 > Es muy importante instalar de manera correcta el entorno de ejecución del BOT.
-##### Librerias necesarias.
+##### Librerías necesarias.
 1. Spacy.
-2. Json.
+2. JSON.
 3. Datetime.
 4. Difflib.
 6. Flask.
