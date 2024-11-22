@@ -51,3 +51,15 @@ La segunda propuesta que se planteó es que el BOT tenga un límite de preguntas
 8. Si el usuario deja de responder, el BOT manda un mensaje de seguimiento después de X tiempo.
 [^1]: El tiempo X puede ser configurado por el administrador del BOT. 
 [^2]: Ya se encuentran implementadas las soluciones de los casos de uso.
+
+##### Caso 3: múltiples preguntas.
+
+![Casos](../img/Caso%203.png)
+
+En múltiples ocasiones se ha visto que el usuario hace múltiples preguntas al BOT. Esto es algo completamente normal, porque el usuario quiere saber toda la información posible en un periodo de tiempo corto, por lo tanto, esto nos puede llegar a crear un problema. Por temas de bucles y si alguna pregunta no está, se identifica su intención, el menú se desplegaría. Por lo tanto, una pregunta sí se contesta, pero la otra no, porque no fue identificada.
+
+##### Caso 4: Situaciones Especiales.
+
+![Casos](../img/Caso%204.png)
+
+En ocasiones se ha detectado que el usuario tiene una intención completamente diferente a lo que estamos manejando con el bot. Por lo tanto, la llamamos *situación especial;* en este caso, tenemos que implementar un filtro que detecte el número de palabras enviadas y que el BOT contacte a un asesor de manera inmediata. Es parecido al sistema que se propuso cuando se tienen más de dos preguntas incorrectas.
