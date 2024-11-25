@@ -150,3 +150,5 @@ Contiene las respuestas que el bot dará cuando esta intención sea detectada. E
 *Sabor y salud
 
 *Habilidades gerenciales.
+
+**¿Quienes somos?**

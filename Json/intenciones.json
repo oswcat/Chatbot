@@ -170,6 +170,15 @@
       "responses": ["[la respuesta va aquí]"]
     },
     {
+      "name": "Quienes somos",
+      "patterns": [
+        "valores",
+        "mision",
+        "vision"
+      ],
+      "responses": ["[la respuesta va aquí]"]
+    },
+    {
       "name": "Cajas",
       "patterns": [
         "¿Cuál es el precio de los lugares de estacionamiento?",
