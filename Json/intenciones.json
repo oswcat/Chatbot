@@ -94,7 +94,10 @@
         "Bachillerato general",
         "¿Qué modalidades tienen?",
         "Preparatoria",
-        "Prepa UNAM"
+        "Prepa UNAM",
+        "Tiene preparatoria o solo universidad.",
+        "Tiene universidad o solo preparatoria."
+
       ],
       "responses": ["[la respuesta va aquí]"]
     },
