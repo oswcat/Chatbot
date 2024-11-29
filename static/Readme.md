@@ -68,6 +68,12 @@ En ocasiones se ha detectado que el usuario tiene una intención completamente d
 
 En esta propuesta se manejan los casos anteriormente encontrados.
 
+En esta propuesta se encuentran todas las intenciones identificadas que encontramos a en el diseño del BOT. Por lo tanto, se encuentran todas las posibles preguntas que el usuario puede hacer al BOT. Si se llegase a encontrar una intencion nueva, no se tendria que hacer un gran cambio en la estructura fundamental del codigo.
+
+![Estructura](../img/Flujosdechat.png)
+
+##### Funcionamiento del BOT.
+
 1. El usuario le manda un mensaje al BOT.
 2. El BOT verifica si el mensaje es mayor a 20 palabras.
 3. Si el mensaje **es mayor** a 20 palabras, el BOT contacta a un *asesor*.
@@ -81,8 +87,6 @@ En esta propuesta se manejan los casos anteriormente encontrados.
 11. Al finalizar, el BOT hace una verificación de si el usuario ha respondido.
 12. Si el usuario ha respondido, el BOT vuelve a empezar el *ciclo*.
 13. Si el usuario no respondió, el BOT manda un mensaje de *seguimiento después de X tiempo*.
-[^1]: El tiempo *X* puede ser configurado por el administrador del BOT.
-
-![Estructura](../img/Flujosdechat.png)
+> El tiempo *X* puede ser configurado por el administrador del BOT.
 
 
