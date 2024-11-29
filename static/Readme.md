@@ -62,4 +62,27 @@ En múltiples ocasiones se ha visto que el usuario hace múltiples preguntas al 
 
 ![Casos](../img/Caso%204.png)
 
-En ocasiones se ha detectado que el usuario tiene una intención completamente diferente a lo que estamos manejando con el bot. Por lo tanto, la llamamos *"situación especial"* en este caso, tenemos que implementar un filtro que detecte el número de palabras enviadas y que el BOT contacte a un asesor de manera inmediata. Es parecido al sistema que se propuso cuando se tienen más de dos preguntas incorrectas.
+En ocasiones se ha detectado que el usuario tiene una intención completamente diferente a lo que estamos manejando con el bot. Por lo tanto, la llamamos *"situación especial"*. En este caso, tenemos que implementar un filtro que detecte el número de palabras enviadas y que el BOT contacte a un asesor de manera inmediata. Es parecido al sistema que se propuso cuando se tienen más de dos preguntas incorrectas.
+
+##### Propuesta de flujo de chat.
+
+En esta propuesta se manejan los casos anteriormente encontrados.
+
+1. El usuario le manda un mensaje al BOT.
+2. El BOT verifica si el mensaje es mayor a 20 palabras.
+3. Si el mensaje **es mayor** a 20 palabras, el BOT contacta a un *asesor*.
+4. Si el mensaje **no es mayor** a 20 palabras, el BOT le da la bienvenida.
+5. El usuario le hace una pregunta o solicita información.
+6. El BOT verifica si la pregunta está en las *intenciones*.
+7. Si la pregunta está en las intenciones, el BOT le da la información solicitada.
+8. Si la pregunta no está en las intenciones, el BOT tiene que verificar si el conteo de preguntas incorrectas es **mayor o igual a 2**.
+9. Si el conteo de preguntas incorrectas es mayor a 2, el BOT contacta a un *asesor*.
+10. Si el conteo de preguntas incorrectas no es mayor a 2, el BOT **despliega el menú**.
+11. Al finalizar, el BOT hace una verificación de si el usuario ha respondido.
+12. Si el usuario ha respondido, el BOT vuelve a empezar el *ciclo*.
+13. Si el usuario no respondió, el BOT manda un mensaje de *seguimiento después de X tiempo*.
+[^1]: El tiempo *X* puede ser configurado por el administrador del BOT.
+
+![Estructura](../img/Flujosdechat.png)
+
+
