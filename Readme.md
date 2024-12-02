@@ -87,3 +87,21 @@ sudo apt install -y supervisor
 8. Supervisord o systemd.
 > Se agregaran mas si es el caso.
 
+##### Archivo .env
+
+En este archivo se guardaran las credenciales de la pagina de messenger, donde se necesitan dos tokens de acceso.
+
+```bash
+PAGE_ACCESS_TOKEN=your_page_access_token
+VERIFY_TOKEN=your_verify_token
+```
+
+##### Como conseguir el "PAGE_ACCESS_TOKEN"?
+
+* El primer paso es registrarse en *META para desarrolladores*
+* En el siguiente paso, debes crear una aplicación en el panel de control de Facebook. 
+* Una vez que hayas creado la aplicación, debes ir a la pestaña "Herramientas".
+* En la pestaña "Herramientas", debes seleccionar la "Aplicacion" y si los permisos son para el usuario o la pagina.
+* En este caso es para la pagina por lo que debes de seleccionar.
+![Token](./img/access_token.png)
+> El nombre de prototipo debe de cambiar al nombre de la pagina que deseas que el bot interactue con.
