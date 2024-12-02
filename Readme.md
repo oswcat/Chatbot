@@ -93,7 +93,6 @@ En este archivo se guardaran las credenciales de la pagina de messenger, donde s
 
 ```bash
 PAGE_ACCESS_TOKEN=your_page_access_token
-VERIFY_TOKEN=your_verify_token
 ```
 
 ##### Como conseguir el "PAGE_ACCESS_TOKEN"?
@@ -105,3 +104,5 @@ VERIFY_TOKEN=your_verify_token
 * En este caso es para la pagina por lo que debes de seleccionar.
 ![Token](./img/access_token.png)
 > El nombre de prototipo debe de cambiar al nombre de la pagina que deseas que el bot interactue con.
+
+##### Configuración del WEBHOOK.
