@@ -22,7 +22,46 @@ A sí mismos los **diagramas de flujo** donde se muestran dos de los problemas q
 [^1]: El tiempo X puede ser configurado por el administrador del BOT. 
 [^2]: Ya se encuentran implementadas las soluciones de los casos de uso.
 
-## Configuración del entorno donde se ejecutará el BOT.
+
+##### Archivo .env
+
+En este archivo se guardaran las credenciales de la pagina de messenger, donde se necesitan dos tokens de acceso.
+
+```bash
+PAGE_ACCESS_TOKEN=your_page_access_token
+```
+
+##### Como conseguir el "PAGE_ACCESS_TOKEN"?
+
+* El primer paso es registrarse en *META para desarrolladores*
+* En el siguiente paso, debes crear una aplicación en el panel de control de Facebook. 
+* Una vez que hayas creado la aplicación, debes ir a la pestaña "Herramientas".
+* En la pestaña "Herramientas", debes seleccionar la "Aplicacion" y si los permisos son para el usuario o la pagina.
+* En este caso es para la pagina por lo que debes de seleccionar.
+
+![Token](./img/access_token.png)
+
+> El nombre de prototipo debe de cambiar al nombre de la pagina que deseas que el bot interactue con.
+
+##### Pruebas de la aplicación.
+
+Para poder ejecutar la aplicación correctamente se necesita de un entorno de ejecución adecuado. Para ello se intento utilizar una maquina virtual con linux especificamente con la distro Debian.
+Donde se tienen que instalar todas las Librerías y dependencias que se estan utilizando
+
+##### Configuración de Debian.
+
+Teniendo la usb booteada con la imagen de Debian se tiene que configurar el nombre que tiene la maquina y como va a salir el nombre del servidor.
+Con el sistema operativo ya funcionando se tiene que agregar el usuario para que sea *Super usuario*, tener los beneficios de *Super usuario* permite la actualizacion de los paquetes y todas las dependencias que utiliza el **sistema operativo**.
+
+```bash
+
+Sudo su 
+```
+*Se ingresa la contraseña y ahora se encuentra en modo super usuario*
+```bash
+sudo adduser username
+```
+
 ##### Configuración de la máquina.
 1. Instalar Debian en el servidor.
 >Una vez instalado, se tienen que actualizar todos los paquetes.
@@ -86,25 +125,3 @@ sudo apt install -y supervisor
 7. Ngrok.
 8. Supervisord o systemd.
 > Se agregaran mas si es el caso.
-
-##### Archivo .env
-
-En este archivo se guardaran las credenciales de la pagina de messenger, donde se necesitan dos tokens de acceso.
-
-```bash
-PAGE_ACCESS_TOKEN=your_page_access_token
-```
-
-##### Como conseguir el "PAGE_ACCESS_TOKEN"?
-
-* El primer paso es registrarse en *META para desarrolladores*
-* En el siguiente paso, debes crear una aplicación en el panel de control de Facebook. 
-* Una vez que hayas creado la aplicación, debes ir a la pestaña "Herramientas".
-* En la pestaña "Herramientas", debes seleccionar la "Aplicacion" y si los permisos son para el usuario o la pagina.
-* En este caso es para la pagina por lo que debes de seleccionar.
-
-![Token](./img/access_token.png)
-
-> El nombre de prototipo debe de cambiar al nombre de la pagina que deseas que el bot interactue con.
-
-##### Configuración del WEBHOOK.
