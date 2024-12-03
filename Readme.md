@@ -61,6 +61,9 @@ Sudo su
 ```bash
 sudo adduser username
 ```
+Con esto se crea un nuevo usuario con todos los permisos de super usuario.
+>en *username* se ingresa el nombre del usuario que se quiere crear.
+>Esto es necesario para poder actualizar los paquetes y dependencias del sistema operativo y podr instalar las nuevas librerias.
 
 ##### Configuración de la máquina.
 1. Instalar Debian en el servidor.
