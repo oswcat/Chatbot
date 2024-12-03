@@ -102,7 +102,9 @@ PAGE_ACCESS_TOKEN=your_page_access_token
 * Una vez que hayas creado la aplicación, debes ir a la pestaña "Herramientas".
 * En la pestaña "Herramientas", debes seleccionar la "Aplicacion" y si los permisos son para el usuario o la pagina.
 * En este caso es para la pagina por lo que debes de seleccionar.
+
 ![Token](./img/access_token.png)
+
 > El nombre de prototipo debe de cambiar al nombre de la pagina que deseas que el bot interactue con.
 
 ##### Configuración del WEBHOOK.
