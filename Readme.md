@@ -5,7 +5,7 @@ La intención de este repositorio es la creación de un BOT de Messenger que pue
 ## Creación del repositorio.
 
 Se empezaron a subir todos los archivos creados con anterioridad, incluyendo el **Reporte de prácticas,** que se está modificando diariamente con todos los avances del día.
-A sí mismos los **diagramas de flujo** donde se muestran dos de los problemas que se encontraron en el planteamiento del proyecto. Fueron el *"Bucle por directorio no encontrado"* y *"contactar a un asesor"*, en estos dos casos se encontraron soluciones y se han implementado en el proyecto. Con soluciones "sencillas" pero efectivas. Por ejemplo, en el caso del "Bucle por directorio no encontrado" se utilizó un menú en el que el usuario puede seleccionar la opción que satisfaga sus necesidades. En el caso del "contactar a un asesor" se utilizó una intervención de un asesor que se encuentra moderando el chat. Por lo tanto, se puede decir que se han encontrado soluciones efectivas a los problemas encontrados.
+A sí mismos los **diagramas de flujo** donde se muestran dos de los problemas que se encontraron en el planteamiento del proyecto. Fueron el *"Bucle por directorio no encontrado"* y *"contactar a un asesor"*, en estos dos casos se encontraron soluciones y se han implementado en el proyecto. Con soluciones "sencillas" pero efectivas. Por ejemplo, en el caso del "Bucle por directorio no encontrado", se utilizó un menú en el que el usuario puede seleccionar la opción que satisfaga sus necesidades. En el caso del "contactar a un asesor", se utilizó una intervención de un asesor que se encuentra moderando el chat. Por lo tanto, se puede decir que se han encontrado soluciones efectivas a los problemas encontrados.
 
 ##### También se puede encontrar el flujo de trabajo del BOT.
 ![Estructura](./img/Estructura.png)
@@ -25,19 +25,25 @@ A sí mismos los **diagramas de flujo** donde se muestran dos de los problemas q
 
 ##### Archivo .env
 
-En este archivo se guardaran las credenciales de la pagina de messenger, donde se necesitan dos tokens de acceso.
-
+En este archivo se guardarán las credenciales de la página de Messenger, donde se necesitan dos tókenes de acceso.
+*Page Access token* y el *verify token*
 ```bash
 PAGE_ACCESS_TOKEN=your_page_access_token
 ```
+Es proporcionado por la plataforma de META developer, donde se configura el *WEBHOOK* y se obtiene el *Page Access Token*.
+El *verify token* es configurado por uno mismo en el archivo *.env* y, cuando se haga la *verificación,* la plataforma de META developer lo comparará con el que se encuentra en el archivo *.env* y, si son iguales, se verificará el *WEBHOOK*.
 
-##### Como conseguir el "PAGE_ACCESS_TOKEN"?
+```bash
+VERIFY_TOKEN=your_verify_token
+```
+
+##### ¿Cómo conseguir el "PAGE_ACCESS_TOKEN"?
 
 * El primer paso es registrarse en *META para desarrolladores*
 * En el siguiente paso, debes crear una aplicación en el panel de control de Facebook. 
 * Una vez que hayas creado la aplicación, debes ir a la pestaña "Herramientas".
-* En la pestaña "Herramientas", debes seleccionar la "Aplicacion" y si los permisos son para el usuario o la pagina.
-* En este caso es para la pagina por lo que debes de seleccionar.
+* En la pestaña "Herramientas", debes seleccionar la "Aplicación" y si los permisos son para el usuario o la página.
+* En este caso es para la página, por lo que debes de seleccionar.
 
 ![Token](./img/access_token.png)
 
@@ -45,24 +51,25 @@ PAGE_ACCESS_TOKEN=your_page_access_token
 
 ##### Pruebas de la aplicación.
 
-Para poder ejecutar la aplicación correctamente se necesita de un entorno de ejecución adecuado. Para ello se intento utilizar una maquina virtual con linux especificamente con la distro Debian.
-Donde se tienen que instalar todas las Librerías y dependencias que se estan utilizando
+Para poder ejecutar la aplicación correctamente, se necesita de un entorno de ejecución adecuado. Para ello, se intentó utilizar una máquina virtual con Linux, específicamente con la distro Debian.
+Donde se tienen que instalar todas las librerías y dependencias que se están utilizando
 
 ##### Configuración de Debian.
 
-Teniendo la usb booteada con la imagen de Debian se tiene que configurar el nombre que tiene la maquina y como va a salir el nombre del servidor.
-Con el sistema operativo ya funcionando se tiene que agregar el usuario para que sea *Super usuario*, tener los beneficios de *Super usuario* permite la actualizacion de los paquetes y todas las dependencias que utiliza el **sistema operativo**.
+Teniendo la USB booteada con la imagen de Debian, se tiene que configurar el nombre que tiene la máquina y cómo va a salir el nombre del servidor.
+Con el sistema operativo ya funcionando, se tiene que agregar el usuario para que sea *Superusuario*. Tener los beneficios de *Superusuario* permite la actualización de los paquetes y todas las dependencias que utiliza el **sistema operativo**.
 
 ```bash
 
 Sudo su 
 ```
-*Se ingresa la contraseña y ahora se encuentra en modo super usuario*
+*Se ingresa la contraseña y ahora se encuentra en modo superusuario*
 ```bash
 sudo adduser username
 ```
-Con esto se crea un nuevo usuario con todos los permisos de super usuario.
+Con esto se crea un nuevo usuario con todos los permisos de superusuario.
 >en *username* se ingresa el nombre del usuario que se quiere crear.
+
 >Esto es necesario para poder actualizar los paquetes y dependencias del sistema operativo y podr instalar las nuevas librerias.
 
 ##### Configuración de la máquina.
@@ -128,3 +135,12 @@ sudo apt install -y supervisor
 7. Ngrok.
 8. Supervisord o systemd.
 > Se agregaran mas si es el caso.
+
+# Problemas en el entorno de ejecución y en las pruebas.
+
+Se están realizando pruebas en el entorno de ejecución y se han encontrado los siguientes problemas:
+>los cuales son bastantes y todavia no se encuentran las soluciones.
+1. Conflictos en el entorno de desarrollo.
+2. Configuración errónea en el *WEBHOOK*.
+3. Problemas en el firewall.
+4. Verificación necesaria.
