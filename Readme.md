@@ -144,3 +144,9 @@ Se están realizando pruebas en el entorno de ejecución y se han encontrado los
 2. Configuración errónea en el *WEBHOOK*.
 3. Problemas en el firewall.
 4. Verificación necesaria.
+
+### El problema encontrado en el código. 
+
+Fue que se repetían las variables en el manejo de las *Requests* a la hora que entraban los mensajes en el chat, el *Túnel* creado con *NGROK* que se expone el servidor públicamente.
+El problema encontrado puede resultar en muchas cosas, como se explicó anteriormente. Estos problemas se podrían solucionar al momento de ejecutar el código en el servidor.
+Al momento de probar el *WEBHOOK* para crear el túnel con *NGROK* *META* si mando correctamente la petición a *NGROK*, en el momento de mandar una petición *(Mensaje)* desde Messenger, No llega la petición al *BOT*.
