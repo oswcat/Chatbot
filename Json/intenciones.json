@@ -32,18 +32,24 @@
       }
     },
     {
-      "name": "Bienvenida",
-      "patterns": [
-        ".",
-        "Hola",
-        "me gustaría tener información",
-        "Buenos días",
-        "Buenas tardes",
-        "Buenas noches",
-        "Buenas"
-      ],
-      "responses": ["[la respuesta va aquí]"]
-    },
+        "name": "Bienvenida",
+        "patterns": [
+          ".",
+          "Hola",
+          "me gustaría tener información",
+          "Buenos días",
+          "Buenas tardes",
+          "Buenas noches",
+          "Buenas"
+        ],
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
+      }
+      
     {
       "name": "Cursos",
       "patterns": [
@@ -52,12 +58,22 @@
         "¿Qué opciones de curso tienen?",
         "¿Cursos?"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Inglés",
       "patterns": ["Inglés", "Evolve"],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Preguntas frecuentes - Colegiatura",
@@ -71,7 +87,12 @@
         "Opciones de pago",
         "¿Puedo pagar en línea?"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Preguntas frecuentes - Inscripciones",
@@ -80,7 +101,12 @@
         "¿Formas de reinscripción?",
         "¿Me puedo reinscribir en línea?"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Oferta educativa - General",
@@ -99,7 +125,12 @@
         "Tiene universidad o solo preparatoria."
 
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Asesor Educativo",
@@ -107,7 +138,12 @@
         "Si quiero continuar con el proceso",
         "Me gustaría hablar con un asesor"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Costos",
@@ -118,7 +154,12 @@
         "No me dijeron cuánto cuesta.",
         "Dame el precio."
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Ubicación de la institución",
@@ -129,7 +170,12 @@
         "¿Como puedo llegar?",
         "¿Dónde están ubicados?"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Redes Sociales",
@@ -140,7 +186,12 @@
         "Instagram",
         "Facebook"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Reclutamiento",
@@ -149,7 +200,12 @@
         "¿Dónde puedo dar mi CV?",
         "¿Dónde puedo mandar mi CV?"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Despedida",
@@ -159,7 +215,12 @@
         "Gracias por la ayuda",
         "¡Excelente servicio!"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Servicios escolares",
@@ -170,7 +231,12 @@
         "¿Cuáles son las formas de titulación?",
         "¿Como me puedo titular?"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Quienes somos",
@@ -179,7 +245,12 @@
         "mision",
         "vision"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Cajas",
@@ -189,7 +260,12 @@
         "Cuánto cuestan los lockers?",
         "Lockers"
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Uniformes y libros",
@@ -198,69 +274,134 @@
         "Libros"
 
       ],
-      "responses": ["[la respuesta va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
       {
   "intents": [
     {
       "name": "Administracion_de_empresas",
       "patterns": ["Administración de empresas"],
-      "responses": ["[la respuesta sobre Administración de Empresas va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Administracion_de_empresas_turisticas",
       "patterns": ["Administración de empresas turísticas", "Turismo"],
-      "responses": ["[la respuesta sobre Administración de Empresas Turísticas va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Arquitectura",
       "patterns": ["Arquitectura", "Arqui"],
-      "responses": ["[la respuesta sobre Arquitectura va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Ciencias_de_la_comunicacion",
       "patterns": ["Ciencias de la comunicación", "Comunicación"],
-      "responses": ["[la respuesta sobre Ciencias de la Comunicación va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Comercio_internacional",
       "patterns": ["Comercio internacional", "Relaciones internacionales"],
-      "responses": ["[la respuesta sobre Comercio Internacional va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Negocios_internacionales",
       "patterns": ["Negocios internacionales"],
-      "responses": ["[la respuesta sobre Negocios Internacionales va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Contaduria",
       "patterns": ["Contaduría", "Conta"],
-      "responses": ["[la respuesta sobre Contaduría va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Finanzas",
       "patterns": ["Finanzas"],
-      "responses": ["[la respuesta sobre Finanzas va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Derecho",
       "patterns": ["Derecho"],
-      "responses": ["[la respuesta sobre Derecho va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Diseno_grafico",
       "patterns": ["Diseño gráfico", "Diseño"],
-      "responses": ["[la respuesta sobre Diseño Gráfico va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Fisioterapia",
       "patterns": ["Fisioterapia", "Fisio"],
-      "responses": ["[la respuesta sobre Fisioterapia va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Gastronomia",
       "patterns": ["Gastronomía", "Gastro"],
-      "responses": ["[la respuesta sobre Gastronomía va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Ingenieria_en_sistemas_computacionales",
@@ -270,7 +411,12 @@
         "Ingeniería",
         "Sistemas"
       ],
-      "responses": ["[la respuesta sobre Ingeniería en Sistemas Computacionales va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Mercadotecnia",
@@ -281,117 +427,232 @@
         "Publicidad y medios",
         "Mercadotecnia digital y publicidad"
       ],
-      "responses": ["[la respuesta sobre Mercadotecnia va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Nutricion",
       "patterns": ["Nutrición", "Nutri"],
-      "responses": ["[la respuesta sobre Nutrición va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Psicologia",
       "patterns": ["Psicología", "Psico"],
-      "responses": ["[la respuesta sobre Psicología va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
     {
       "name": "Pedagogia",
       "patterns": ["Pedagogía", "Enseñanza en niños pequeños"],
-      "responses": ["[la respuesta sobre Pedagogía va aquí]"]
+      "responses": [
+        {
+          "text": "[la respuesta va aquí]",
+          "image": null
+        }
+      ]
     },
       {
         "name": "Licenciaturas_empresariales",
         "patterns": ["Licenciaturas empresariales"],
-        "responses": ["[la respuesta sobre Licenciaturas empresariales va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Licenciaturas_sabatinas",
         "patterns": ["Licenciaturas sabatinas"],
-        "responses": ["[la respuesta sobre Licenciaturas sabatinas va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Derecho_en_linea",
         "patterns": ["Derecho en línea", "Derecho virtual", "Derecho online"],
-        "responses": ["[la respuesta sobre Derecho en línea va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Administracion_de_empresas_en_linea",
         "patterns": ["Administración en línea", "Administración virtual", "Administración online"],
-        "responses": ["[la respuesta sobre Administración de empresas en línea va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Licenciaturas_en_linea",
         "patterns": ["Licenciaturas en línea", "Carreras en línea", "Licenciaturas virtuales"],
-        "responses": ["[la respuesta sobre Licenciaturas en línea va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Contaduria_en_linea",
         "patterns": ["Contaduría en línea", "Contaduría virtual", "Conta en línea"],
-        "responses": ["[la respuesta sobre Contaduría en línea va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Pedagogia_en_linea",
         "patterns": ["Pedagogía en línea", "Pedagogía virtual"],
-        "responses": ["[la respuesta sobre Pedagogía en línea va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Posgrados",
         "patterns": ["Posgrados", "Programas de posgrado", "Estudios de posgrado"],
-        "responses": ["[la respuesta sobre Posgrados va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestrias",
         "patterns": ["Maestrías", "Programas de maestría"],
-        "responses": ["[la respuesta sobre Maestrías va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestria_talento_humano",
         "patterns": ["Administración y gestión estratégica de talento humano", "Talento humano", "Recursos humanos"],
-        "responses": ["[la respuesta sobre la Maestría en Talento Humano va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestria_derecho_fiscal",
         "patterns": ["Derecho fiscal y administrativo", "Fiscal", "Impuestos", "Contabilidad fiscal"],
-        "responses": ["[la respuesta sobre la Maestría en Derecho Fiscal va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestria_contabilidad",
         "patterns": ["Maestría en contabilidad", "Contabilidad", "Impuestos"],
-        "responses": ["[la respuesta sobre la Maestría en Contabilidad va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestria_derecho_procesal",
         "patterns": ["Derecho procesal penal acusatorio y adversarial", "Procesal", "Penal", "Jurídico", "Derecho penal"],
-        "responses": ["[la respuesta sobre la Maestría en Derecho Procesal va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestria_educacion",
         "patterns": ["Educación", "Maestría en Educación"],
-        "responses": ["[la respuesta sobre la Maestría en Educación va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Maestria_ciberseguridad",
         "patterns": ["Seguridad de sistemas y tecnologías de la información", "Ciberseguridad", "Maestría en Ciberseguridad"],
-        "responses": ["[la respuesta sobre la Maestría en Ciberseguridad va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Neuromarketing",
         "patterns": ["Neuromarketing"],
-        "responses": ["[la respuesta sobre la Maestría en Ciberseguridad va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Sabor_y_salud",
         "patterns": ["Sabor y salud"],
-        "responses": ["[la respuesta sobre el Diplomado de sabor y salud va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Habilidades_gerenciales",
         "patterns": ["Habilidadades Gerenciales","Gerente"],
-        "responses": ["[la respuesta sobre el Diplomado de Habilidades Gerenciales va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       },
       {
         "name": "Diplomados",
         "patterns": ["Diplomado","Diplomados"],
-        "responses": ["[la respuesta sobre los Diplomados va aquí]"]
+        "responses": [
+          {
+            "text": "[la respuesta va aquí]",
+            "image": null
+          }
+        ]
       }
 
     ]
