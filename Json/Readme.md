@@ -151,4 +151,35 @@ Contiene las respuestas que el bot dará cuando esta intención sea detectada. E
 
 *Habilidades gerenciales.
 
-**¿Quienes somos?**
+##### Manejo de imagenes para responder.
+
+En el transcurso del desarrollo del BOT, se han identificado las distintas maneras de responder a un mensaje de un usuario y como se puede evitar el mandar mensajes extremadamente largos y buscar la manera de hacer la información más digerible para el usuario.
+Por lo que se ha propuesto el manejo de imagenes en las respuestas del BOT, para que el usuario pueda visualizar la información de manera más clara y rápida.
+Por eso mismo se tiene que modificar la estructura del archivo *.JSON* para que pueda incluir las imagenes en sus respuestas.
+##### Estructura modificada del archivo *.JSON*
+
+```python
+    {
+      "name": "location",
+      "patterns": [
+        "ubicación",
+        "dirección",
+        "donde están",
+        "como llegar"
+      ],
+      "responses": [
+        {
+          "text": "Nos encontramos en [dirección de la institución].",
+          "image": "https://ejemplo.com/images/ubicacion.jpg"
+        }
+      ]
+    }
+```
+##### Explicación.
+
+En esta nueva estructura la respuesta se categoriza en dos partes: texto e imagen. Messenger no permite el envío de imagenes localmente, por lo tanto, la imagen solo se puede guardar mediante una *URL* y se tiene que asegurar que la imagen esté disponible en el servidor para que el usuario pueda visualizarla.
+
+El problema encontrado en este punto es que la imagen se tiene que cargar a un servidor y si solo contamos con la máquina que está alojando al bot tiene que crear otro servidor para alojar las imagenes, lo que puede ser un problema de seguridad y de costo.
+
+Se han planteado distintas opciones y la más factible es guardar las imagenes en la página institucional y utilizar la *URL* de la imagen para que el usuario pueda visualizarla.
+Esto nos ahorraría el costo de crear otro servidor y nos permitiría tener un mejor control sobre la seguridad de las imagenes.
