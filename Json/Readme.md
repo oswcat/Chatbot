@@ -175,7 +175,7 @@ Por eso mismo se tiene que modificar la estructura del archivo *.JSON* para que 
       ]
     }
 ```
-Si no se tiene una imagen para responder la intención tiene que cambiar, no se borra la estructura que tiene y ponerse un *NULL* en vez de una *URL*.
+Si no se tiene una imagen para enviar, la estructura tiene que cambiar, no se borra el campo *"image"* se tiene que poner un *NULL* en vez de una *URL*.
 
 ```python
     {
