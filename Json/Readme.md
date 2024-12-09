@@ -175,6 +175,26 @@ Por eso mismo se tiene que modificar la estructura del archivo *.JSON* para que 
       ]
     }
 ```
+Si no se tiene una imagen para responder la intención tiene que cambiar, no se borra la estructura que tiene y ponerse un *NULL* en vez de una *URL*.
+
+```python
+    {
+      "name": "location",
+      "patterns": [
+        "ubicación",
+        "dirección",
+        "donde están",
+        "como llegar"
+      ],
+      "responses": [
+        {
+          "text": "Nos encontramos en [dirección de la institución].",
+          "image": null
+        }
+      ]
+    }
+```
+
 ##### Explicación.
 
 En esta nueva estructura la respuesta se categoriza en dos partes: texto e imagen. Messenger no permite el envío de imagenes localmente, por lo tanto, la imagen solo se puede guardar mediante una *URL* y se tiene que asegurar que la imagen esté disponible en el servidor para que el usuario pueda visualizarla.
