@@ -1,8 +1,8 @@
-# Configuración de meta developer y meta business.
+# Configuración de META developer y META business.
 
 ## META developer.
 
-Se utiliza meta developer para crear la aplicación y poder crear la aplicación del bot, En este mismo apartado se piden los permisos para que el *BOT* interactúe con la *API* de Messenger.
+Se utiliza Meta developer para crear la aplicación en Meta developer y poder comunicar la aplicación del bot, En este mismo apartado se piden los permisos para que el *BOT* interactúe con la *API* de Messenger.
 Es muy importante tener los permisos correctamente configurados para que el bot pueda funcionar. En este caso se utilizan los siguientes permisos.
 
 
@@ -32,7 +32,7 @@ En este apartado se configura la *URL* que da el BOT al iniciar su funcionamient
 
 #### Token de acceso a la página.
 
-Es generado por Meta developer cada vez que el *BOT* inicia su proceso, el bot cada vez que inicia cambia su *URL* de *Webhook*.
+Es generado por Meta developer cada vez que el *BOT* inicia su proceso cambia su *URL* de *Webhook*.
 
 ![Permisos](../img/token%20de%20verificacion.png)
 
