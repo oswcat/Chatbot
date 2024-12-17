@@ -39,3 +39,14 @@ Es generado por Meta developer cada vez que el *BOT* inicia su proceso cambia su
 Con estos 3 pasos se configura la aplicación del *BOT* en *Meta Developer*.
 
 ## Meta business.
+
+En meta Business se tiene que configurar la conexión con meta developer. Se tienen que seguir los siguientes pasos.
+
+1. Entrar a *la configuración*.
+2. Buscar *mensajería avanzada*.
+3. Configuración de la aplicación.
+4. Receptor principal del protocolo de traspaso.
+5. Elegir el nombre de la aplicación.
+
+De igual forma, en el enrutamiento de conversación de Messenger se tiene que elegir la aplicación del BOT.
+
