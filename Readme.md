@@ -150,3 +150,11 @@ Se están realizando pruebas en el entorno de ejecución y se han encontrado los
 Fue que se repetían las variables en el manejo de las *Requests* a la hora que entraban los mensajes en el chat, el *Túnel* creado con *NGROK* que se expone el servidor públicamente.
 El problema encontrado puede resultar en muchas cosas, como se explicó anteriormente. Estos problemas se podrían solucionar al momento de ejecutar el código en el servidor.
 Al momento de probar el *WEBHOOK* para crear el túnel con *NGROK* *META* si mando correctamente la petición a *NGROK*, en el momento de mandar una petición *(Mensaje)* desde Messenger, No llega la petición al *BOT*.
+### Solución del problema.
+Fue la configuración de *META Business,* como se explica en el Readme de *META*.
+
+El siguiente problema se encontró en las pruebas con Messenger, el cual es el siguiente:
+
+El BOT ya recibía los mensajes y podía responder algunas cosas, por qué no se encuentra configurado el archivo. JSON*, Cuando se trató de configurar el archivo con todas las intenciones y patrones que se tenían, el BOT dejo de responder los mensajes y se apagaba automáticamente.
+
+El problema que da es que en la parte del código llamada Calculadora de similitudes no encuentra los vectores de búsqueda, por lo tanto, es un problema que se tiene que arreglar porque no permite el funcionamiento del BOT.
