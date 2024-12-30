@@ -158,3 +158,10 @@ El siguiente problema se encontró en las pruebas con Messenger, el cual es el s
 El BOT ya recibía los mensajes y podía responder algunas cosas, por qué no se encuentra configurado el archivo. JSON*, Cuando se trató de configurar el archivo con todas las intenciones y patrones que se tenían, el BOT dejo de responder los mensajes y se apagaba automáticamente.
 
 El problema que da es que en la parte del código llamada Calculadora de similitudes no encuentra los vectores de búsqueda, por lo tanto, es un problema que se tiene que arreglar porque no permite el funcionamiento del BOT.
+
+Actualmente, se tienen problemas con el "BOT" que no permite la carga de las intenciones. Esto se puede deber a que son archivos demasiado grandes y se tienen que hacer en archivos más pequeños. También se puede deber a NGROK y los túneles de conexión con el Firewall para poder recibir las peticiones de META developer.
+En las dos versiones del BOT que se tienen actualmente se tiene un problema parecido.
+El BOT con procesamiento de lenguaje natural no encuentra los vectores de búsqueda, por lo tanto, no permite el funcionamiento del BOT y los servicios de flask se detienen automáticamente sin una explicación alguna.
+El BOT que funciona solamente con búsqueda y reconocimiento de palabras se queda en Bucle infinito dando la bienvenida al usuario y no permite el funcionamiento del BOT.
+Ambos problemas parecen no tener relación alguna, pero se deben al manejador de mensajes de Messenger.
+Actualmente, se está trabajando para que el bot pueda funcionar con todas las intenciones, todavía falta implementar el manejo de preguntas de similitudes en preguntas similares y las preguntas de seguimiento.
